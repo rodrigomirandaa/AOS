@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // Importando a configuração do banco de dados
+const sequelize = require('../config/db'); 
 
 const Experience = sequelize.define('Experience', {
   id: {
@@ -28,8 +28,8 @@ const Experience = sequelize.define('Experience', {
     allowNull: true
   }
 }, {
-  tableName: 'experiences', // Certifique-se de que o nome da tabela está correto
-  timestamps: false, // Se você tiver colunas `createdAt` e `updatedAt`
+  tableName: 'experiences', 
+  timestamps: false, 
 });
 
 module.exports = Experience;
