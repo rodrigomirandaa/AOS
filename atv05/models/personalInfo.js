@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // Importando a configuração do banco de dados
+const sequelize = require('../config/db'); 
 
 const PersonalInfo = sequelize.define('PersonalInfo', {
   id: {
@@ -28,8 +28,8 @@ const PersonalInfo = sequelize.define('PersonalInfo', {
     allowNull: false
   }
 }, {
-  tableName: 'personal_info', // Nome da tabela no banco
-  timestamps: false, // Caso não utilize createdAt e updatedAt
+  tableName: 'personal_info', 
+  timestamps: false, 
 });
 
 module.exports = PersonalInfo;
